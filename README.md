@@ -1,0 +1,1 @@
+# hapiBoilerPlate-ES6
