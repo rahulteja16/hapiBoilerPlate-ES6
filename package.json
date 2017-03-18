@@ -25,6 +25,7 @@
     "babel-register": "^6.24.0"
   },
   "dependencies": {
+    "hapi": "^16.1.0",
     "nodemon": "^1.11.0"
   }
 }
