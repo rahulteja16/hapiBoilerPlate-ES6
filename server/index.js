@@ -1,9 +1,11 @@
   'use strict';
   import Hapi from 'hapi';
+  import yaml from 'yamljs';
   import routes from '../server/routes';
+  const config = yaml.load('server/config/server.yaml');
   const server = new Hapi.Server();
 
-  server.connection({ port:3000, host: '192.168.56.103' })
+  server.connection({ port:config.port, host: config.host })
   server.route(routes);
 
   server.start((err)=>{
